@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
 const localCart = JSON.parse(localStorage.getItem("cart"))
-
-console.log(localCart.length)
+const cartCount = localCart ?  localCart.length : 0
+// console.log(localCart.length)
 const[menu,setMenu] = useState("Home");
     return (
 
@@ -34,7 +34,7 @@ const[menu,setMenu] = useState("Home");
           <div className='nav-login-cart'>
            <Link to='/login'><button>Login/Sign Up</button></Link> 
            <Link to='/cart'> <img src={cart_icon} alt="" /></Link> 
-            <div className='nav-cart-count'>{localCart.length}</div>
+            <div className='nav-cart-count'>{cartCount}</div>
             
           </div>
           <div className='icon'><img src={search_icon} alt="" /></div>
