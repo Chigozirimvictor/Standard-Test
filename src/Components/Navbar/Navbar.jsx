@@ -48,7 +48,7 @@ const[menu,setMenu] = useState("Home");
     <div className='nav-login-cart'>
      <Link to='/login'><button>Login/Sign Up</button></Link> 
      <Link to='/cart'> <img src={cart_icon} alt="" /></Link> 
-      <div className='nav-cart-count'>{localCart.length}</div>
+      {/* <div className='nav-cart-count'>{localCart.length}</div> */}
       
     </div>
     <div className='icon'></div>
