@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
 const localCart = JSON.parse(localStorage.getItem("cart"))
-const cartCount = localCart ?  localCart.length : 0
+// const cartCount = localCart ?  localCart.length : 0
 // console.log(localCart.length)
 const[menu,setMenu] = useState("Home");
     return (
@@ -51,7 +51,7 @@ const[menu,setMenu] = useState("Home");
       <div className='nav-cart-count'>{localCart.length}</div>
       
     </div>
-    <div className='icon'><img src={cartCount} alt="" /></div>
+    <div className='icon'></div>
 
     </div>
     </div>
