@@ -14,33 +14,48 @@ const[menu,setMenu] = useState("Home");
     return (
 
        
-        <div className='navbar'>
-            <div className='nav'>
-            <img src={cart_img} alt="" />
-            </div>
-            <div className='second-div'>
-          <div className='nav-logo'>
-            <h2>Bandage</h2>
-          </div>
-          <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("Home")}}><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> {menu=== "Home"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("Products")}}><Link style={{textDecoration: 'none'}} to='/products'>Shop/Products</Link>{menu=== "Products"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("About")}}><Link style={{textDecoration: 'none'}} to='/About'>About</Link>{menu=== "About"?<hr />:<></>}</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <li>Pages</li>
+      <div className='navbar'>
 
-          </ul>
-          <div className='nav-login-cart'>
-           <Link to='/login'><button>Login/Sign Up</button></Link> 
-           <Link to='/cart'> <img src={cart_icon} alt="" /></Link> 
-            <div className='nav-cart-count'>{cartCount}</div>
-            
-          </div>
-          <div className='icon'><img src={search_icon} alt="" /></div>
+      <div className='nav'>
+      <img src={cart_img} alt="" />
+      </div>
+      <div className='second-div'>
 
-          </div>
-        </div>
+      
+  
+
+    <div className='nav-logo'>
+      <h2>Bandage</h2>
+    </div>
+
+    <label class="toggle-button" for="menubar">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </label>
+
+  <input className='input_check' type='checkbox' id='menubar'></input>
+  <div className='Navbar'>
+    <ul className='nav-menu'>
+      <li onClick={()=>{setMenu("Home")}}><Link style={{textDecoration: 'none'}}  to='/'>Home</Link> {menu=== "Home"?<hr />:<></>}</li>
+      <li onClick={()=>{setMenu("Products")}}><Link style={{textDecoration: 'none'}} to='/products'>Shop/Products</Link>{menu=== "Products"?<hr />:<></>}</li>
+      <li onClick={()=>{setMenu("About")}}><Link style={{textDecoration: 'none'}} to='/About'>About</Link>{menu=== "About"?<hr />:<></>}</li>
+      <li>Blog</li>
+      <li>Contact</li>
+      <li>Pages</li>
+
+    </ul>
+    <div className='nav-login-cart'>
+     <Link to='/login'><button>Login/Sign Up</button></Link> 
+     <Link to='/cart'> <img src={cart_icon} alt="" /></Link> 
+      <div className='nav-cart-count'>{localCart.length}</div>
+      
+    </div>
+    <div className='icon'><img src={cartCount} alt="" /></div>
+
+    </div>
+    </div>
+  </div>
         
     
 

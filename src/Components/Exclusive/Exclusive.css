@@ -105,3 +105,46 @@
 
 
 
+@media screen and (max-width: 700px) {
+    .products{
+        display: grid;
+        width: 80%;
+        justify-content: center;
+        
+    }
+    .prod-item{
+        width: 50%;
+    }
+    .menu{
+        width: 60%;
+        border: none;
+    }
+    .menu:hover{
+      font-family: 'Courier New', Courier, monospace;
+     color: #4a4a4a;
+    }
+    .Cart{
+        width: 150%;
+        height: 10vh;
+        display: flex;
+        padding-top: 1rem;
+        justify-content: center;
+    }
+    .addCart{
+        width: 150%;
+        background: #363636;
+        height: 30px;
+    }
+    .addCart:hover{
+        background-color: red;
+    }
+    .removeCart{
+        width: 250%;
+        background: #363636;
+        /* padding: 1rem; */
+    }
+    .removeCart:hover{
+        background: red;
+    }
+    
+}

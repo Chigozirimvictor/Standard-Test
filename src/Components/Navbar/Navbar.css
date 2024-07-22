@@ -5,6 +5,9 @@
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
 }
+.Navbar{
+    display: flex;
+}
 .nav img{
     width: 100%;
 }
@@ -89,4 +92,99 @@
     justify-content: center;
     align-items: center;
 
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 120%;
+    background-color :red;
+    border-radius: 10px;
+}
+
+.input_check{
+    display: none;
+
+}
+
+
+@media screen and (max-width: 700px){
+    .navbar{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10rem;
+    }
+    .toggle-button{
+        display: flex;
+        color: rgb(247, 35, 35);
+        margin-top: 4.5rem;
+        margin-left: 3rem;
+
+        
+    }
+    .Navbar{
+        display: none;
+        padding: 2rem;
+        flex-flow: row nowrap;
+        height: 80vh;
+        /* overflow: hidden; */
+        margin-top: 5rem;
+        width: 80%;
+        justify-content: center;
+        background-color: #7a7a7a;
+        overflow: hidden;
+    }
+    .second-div{
+        display: block;
+    
+    }
+    .nav-logo{
+        margin-left: 10rem;
+    }
+    .nav-menu{
+        flex-direction: column;
+        /* align-items: flex-start; */
+        height: 110px;
+        justify-content: center;
+        width: 100%;
+        /* background-color: whitesmoke; */
+        color: black;
+        z-index: 1000;
+        cursor: pointer;
+        margin-top: 6rem;
+
+    }
+    .nav-menu > li{
+        text-align: center;
+        /* background-color: rgb(223, 8, 8); */
+        z-index: 1000;
+        /* width: 400px; */
+        /* margin: 2rem 2rem; */
+    }
+    .nav-login-cart{
+        /* display: none; */
+        flex-flow: column nowrap;
+        margin-top: 12rem;
+        margin-left: 12rem;
+    }
+    
+    .input_check{
+        display: none;
+    }
+
+    .input_check:checked ~ div{
+        /* margin-top: 50%; */
+        padding-top: 20%;
+        display: block;
+        transition: 600ms ease-in-out;
+    }
 }

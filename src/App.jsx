@@ -9,6 +9,7 @@ import Products from './Pages/Products';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
+import NewCollections from './Components/NewCollections/NewCollections';
 // import Breadcrumps from './Components/Breadcrumps/Breadcrumps';
 
 
@@ -48,6 +49,7 @@ function App() {
 
       </Routes>
     {/* <Breadcrumps/> */}
+    <NewCollections/>
       <Footer/>
 
       </BrowserRouter>
