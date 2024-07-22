@@ -105,10 +105,3 @@
 
 
 
-@media (max-width:500px) {
-    .products{
-        display: none;
-        margin-left: -2rem;
-    }
-    
-}
