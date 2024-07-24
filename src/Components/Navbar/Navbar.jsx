@@ -15,7 +15,7 @@ const Navbar = () => {
 
 const cart = JSON.parse(localStorage.getItem("cart"))
 if (cart !== null && cart !== undefined){
-  console.log(cart.length)
+  console.log(cart.length);
 }
 // const cartLength = useMemo(() => cart.length, [cart])
 // const cart = useSelector((state) => state.cart.items);
