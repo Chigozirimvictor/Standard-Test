@@ -1,11 +1,12 @@
-import React, { useState } from 'react' 
+import React, { useMemo, useState } from 'react' 
 import './Navbar.css'
 import cart_icon from '../Assets/cart_icon.png'
 import cart_img from '../Assets/cart_img.png'
 import search_icon from '../Assets/search_icon.webp'
 import { Link } from 'react-router-dom'
 // import { BsCart } from "react-icons/bs";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
+// import { useMemo } from "react-redux";
 
 
 const Navbar = () => {
@@ -13,6 +14,10 @@ const Navbar = () => {
 
 
 const cart = JSON.parse(localStorage.getItem("cart"))
+if (cart !== null && cart !== undefined){
+  console.log(cart.length)
+}
+// const cartLength = useMemo(() => cart.length, [cart])
 // const cart = useSelector((state) => state.cart.items);
 
 // const cartCount = localCart ?  localCart.length : 0
@@ -58,7 +63,7 @@ const[menu,setMenu] = useState("Home");
       <div className='nav-cart-count'>{cart.length}</div>
       
     </div>
-    <div className='icon'></div>
+    
 
     </div>
     </div>
