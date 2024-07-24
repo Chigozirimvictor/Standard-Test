@@ -120,6 +120,8 @@
 @media screen and (max-width: 700px) {
     .Main-div{
         width: 100%;
+    margin-left: -2rem;
+    margin-top: -7rem;
         display: grid;
         overflow: hidden;
     }
@@ -146,11 +148,13 @@
         height: 70%;
     }
     .second{
-        width: 85%;
-        height: 70%;
+        width: 70%;
+        height: 50%;
         display: flex;
-       
+        /* margin-left: -4rem; */
+        overflow: scroll;
     }
+    
     
     .Second-div{
         margin-top: 5rem;

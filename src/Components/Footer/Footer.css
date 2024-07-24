@@ -67,3 +67,20 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+@media screen and (max-width: 700px){
+    .footer{
+        width: 100%;
+        /* overflow:  hidden; */
+    }
+    /* .footer ul{
+        gap: 10px;
+        overflow: hidden;
+    } */
+    .footer-links{
+        gap: 5px;
+        font-size: 17px;
+     /* margin-left: 14rem; */
+     margin-right: 4rem;
+    }
+}

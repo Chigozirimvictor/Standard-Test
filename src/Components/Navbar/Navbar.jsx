@@ -4,10 +4,17 @@ import cart_icon from '../Assets/cart_icon.png'
 import cart_img from '../Assets/cart_img.png'
 import search_icon from '../Assets/search_icon.webp'
 import { Link } from 'react-router-dom'
+// import { BsCart } from "react-icons/bs";
+import { useSelector } from "react-redux";
+
 
 const Navbar = () => {
 
-const localCart = JSON.parse(localStorage.getItem("cart"))
+
+
+const cart = JSON.parse(localStorage.getItem("cart"))
+// const cart = useSelector((state) => state.cart.items);
+
 // const cartCount = localCart ?  localCart.length : 0
 // console.log(localCart.length)
 const[menu,setMenu] = useState("Home");
@@ -48,7 +55,7 @@ const[menu,setMenu] = useState("Home");
     <div className='nav-login-cart'>
      <Link to='/login'><button>Login/Sign Up</button></Link> 
      <Link to='/cart'> <img src={cart_icon} alt="" /></Link> 
-      {/* <div className='nav-cart-count'>{localCart.length}</div> */}
+      <div className='nav-cart-count'>{cart.length}</div>
       
     </div>
     <div className='icon'></div>
