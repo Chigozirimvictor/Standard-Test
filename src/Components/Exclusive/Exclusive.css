@@ -109,38 +109,55 @@
     .products{
         display: grid;
         width: 50%;
+        /* display: flex; */
+        flex-flow: column wrap;
         justify-content: center;
-        overflow: hidden;
+        /* overflow: scroll; */
         
     }
     .prod-item{
-        width: 50%;
+        width: 40%;
+        display: flex;
+        flex-flow: column wrap;
+        padding-left: 1.5rem;
+        /* margin-bottom:7rem; */
+        /* padding-bottom: 2rem; */
+        justify-content: center;
+        align-items: center;
     }
+    
     .menu{
-        width: 60%;
+        width: 120%;
+        height: 57vh;
+        padding-top: 1rem;
+        display: block;
+        /* overflow: scroll; */
+        margin-left: -3rem;
         border: none;
+        /* border: 3px solid rebeccapurple; */
     }
-    .menu:hover{
+    /* .menu:hover{
       font-family: 'Courier New', Courier, monospace;
      color: #4a4a4a;
-    }
+    } */
     .Cart{
-        width: 150%;
-        height: 10vh;
-        display: flex;
-        padding-top: 1rem;
-        justify-content: center;
+        /* width: 100%; */
+        /* height: 20vh; */
+        display: block;
+        padding: 1rem;
+        /* justify-content: center; */
     }
     .addCart{
-        width: 150%;
+        width: 80%;
         background: #363636;
-        height: 30px;
+        height: 20px;
     }
     .addCart:hover{
         background-color: red;
     }
     .removeCart{
-        width: 250%;
+        width: 85%;
+        margin-top: -1.5rem;
         background: #363636;
         /* padding: 1rem; */
     }
