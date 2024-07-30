@@ -53,15 +53,7 @@ const Furniture = () => {
                 <img src='{productcover}' alt="" />
                </div>
 
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
-               <div></div>
+               
             </div>
 
            </div>

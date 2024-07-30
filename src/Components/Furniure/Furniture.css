@@ -138,11 +138,7 @@
         font-size: 30px;
        
     }
-    .Responsive{
-        display: grid;
-        width: 100%;
-        
-    }
+    
     .first{
         width: 80%;
         height: 70%;
@@ -154,15 +150,31 @@
         /* margin-left: -4rem; */
         overflow: scroll;
     }
+    .cup{
+        width: 40%;
+        /* font-size: 10px; */
+    }
+    .cup h1{
+        font-size: 18px;
+       
+    }
+    
     
     
     .Second-div{
-        margin-top: 5rem;
+        /* margin-top: 15rem; */
         margin-bottom: -8rem;
-      height: 70vh;
-        width: 100%;
-        display: grid;
+      height: 50vh;
+        width: 80%;
+        font-size: 10px;
+        /* display: grid; */
+        
+        display: flex;
         justify-content: center;
+        align-items: center;
+    }
+    .seller h3{
+        font-size: 20px;
     }
 }
 
